@@ -367,15 +367,15 @@ show_status() {
     check_status
     case $? in
     0)
-        echo -e "Panel status: ${green}已运行${plain}"
+        echo -e "Panel status: ${green}Already run${plain}"
         show_enable_status
         ;;
     1)
-        echo -e "Panel status: ${yellow}未运行${plain}"
+        echo -e "Panel status: ${yellow}Not running${plain}"
         show_enable_status
         ;;
     2)
-        echo -e "Panel status: ${red}未安装${plain}"
+        echo -e "Panel status: ${red}Not Installed${plain}"
         ;;
     esac
     show_xray_status
@@ -384,9 +384,9 @@ show_status() {
 show_enable_status() {
     check_enabled
     if [[ $? == 0 ]]; then
-        echo -e "Whether to start automatically after power on: ${green}是${plain}"
+        echo -e "Whether to start automatically after power on: ${green}yes${plain}"
     else
-        echo -e "Whether to start automatically after power on: ${red}否${plain}"
+        echo -e "Whether to start automatically after power on: ${red}no${plain}"
     fi
 }
 
