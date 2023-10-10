@@ -137,7 +137,7 @@ uninstall() {
     rm /usr/local/x-ui/ -rf
 
     echo ""
-    echo -e "The uninstallation is successful. If you want to delete this script, exit the script and run ${green}rm /usr/bin/x-ui -f${plain} to delete"
+    echo -e "Uninstallation successful, if you want to delete this script, exit the script and run ${green}rm /usr/bin/x-ui -f${plain} to delete it"
     echo ""
 
     if [[ $# == 0 ]]; then
